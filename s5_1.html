@@ -1,0 +1,18 @@
+<html>
+<head><title>Session 5.1</title>
+<script language="JavaScript">
+function Area(r)
+{
+	var area;
+	area = Math.PI * r * r;
+	alert("Area of Circle = " + area);
+}
+</script>
+</head>
+<body>
+<form name="form1">
+Enter the radius of circle:<input type="text" name="radius"><br><br>
+<input type="button" value="Calculate" onClick="Area(form1.radius.value)">  
+</form>
+</body>
+</html>

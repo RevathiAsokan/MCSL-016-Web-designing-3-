@@ -1,0 +1,40 @@
+<html>
+<head><title>Session 7.1</title>
+<script language="JavaScript">
+function calc(ch)
+{
+	if(ch=="=")
+		form1.t.value= eval(form1.t.value);
+	else if(ch=="C")
+		form1.t.value= "";
+	else
+	form1.t.value+=ch;
+}
+</script>
+</head>
+<body onLoad="getTimes()">
+<form name="form1" method="post" action="">
+<input name="t" type="text" id="t"><br>	
+<input type="button" name="submit7" value="7" onClick="calc('7')">
+<input type="button" name="Submit8" value="8" onClick="calc('8')">
+<input type="button" name="Submit9" value="9" onClick="calc('9')">
+<input type="button" name="Submita" value="+" onClick="calc('+')">
+<br>
+<input type="button" name="Submit4" value="4" onClick="calc('4')">
+<input type="button" name="Submit5" value="5" onClick="calc('5')">
+<input type="button" name="Submit6" value="6" onClick="calc('6')">
+<input type="button" name="Submits" value="-" onClick="calc('-')">
+<br>
+<input type="button" name="Submit9" value="1" onClick="calc('1')">
+<input type="button" name="Submit10" value="2" onClick="calc('2')">
+<input type="button" name="Submit11" value="3" onClick="calc('3')">
+<input type="button" name="Submitm" value="*" onClick="calc('*')">
+<br>
+<input type="button" name="Submit0" value="0" onClick="calc('0')">
+<input type="button" name="Submitc" value="C" onClick="calc('C')">
+<input type="button" name="Submite" value="=" onClick="calc('=')">
+<input type="button" name="Submitd" value="/" onClick="calc('/')">
+<br>
+</form>
+</body>
+</html>

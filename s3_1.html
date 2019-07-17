@@ -1,0 +1,19 @@
+<html>
+<head><title>Session 3.1 </title>
+<script language="JavaScript">
+function multable(n)
+{
+	var i;
+	for(i=1;i<=10;i++)
+		document.write(n + " * " + i + " = " + n*i +"<br>");
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post" action="">
+To print tables<br><br>
+Enter a number: <input type="text" name="num"><br><br>
+<input type="submit" name="Submit" value="Print" onClick="multable(form1.num.value)">
+</form>
+</body>
+</html>

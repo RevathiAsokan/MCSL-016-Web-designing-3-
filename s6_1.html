@@ -1,0 +1,17 @@
+<html>
+<head><title>Session 6.1</title>
+<script language="JavaScript">
+function getTimes()
+{
+	var dt=new Date();
+	form1.t.value= dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+	window.setTimeout("getTimes()",500);
+}
+</script>
+</head>
+<body onLoad="getTimes()">
+<form name="form1" method="post" action="">
+Digital Clock: <input type="text" name="t">
+</form>
+</body>
+</html>

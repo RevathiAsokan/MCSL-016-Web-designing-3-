@@ -1,0 +1,24 @@
+<html>
+<head><title>Session 2.3 </title>
+<script language="JavaScript">
+var car=new Object;
+car.model="Land Rover";
+car.make="Evoque";
+car.year=2019;
+car.price=6000000;
+
+function printdet()
+{
+document.write("Model : " + car.model);
+document.write("<br>Make  : " + car.make);
+document.write("<br>Year  : " + car.year);
+document.write("<br>Price : " + car.price);
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post" action="">
+<input type="submit" name="Submit" value="Print Details" onClick="printdet()">
+</form>
+</body>
+</html>

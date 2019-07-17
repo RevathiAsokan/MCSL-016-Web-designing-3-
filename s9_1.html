@@ -1,0 +1,19 @@
+<html>
+<head><title>Session 9.1</title>
+<script language="JavaScript">
+function print()                                    
+{    
+	document.write("Employee ID: " + form1.empid.value + "<br>Employee Name: " + form1.empname.value + "<br>Designation: " + form1.empdesg.value);
+}
+</script> 
+</head>  
+<body> 
+<h3>Employee Details</h3>          
+<form name="form1" action="" method="post">        
+Employee ID: <input type="text" size="10" name="empid"><br><br>
+Employee Name: <input type="text" size="40" name="empname"><br><br> 
+Designation: <input type="text" size="25" name="empdesg"><br><br>
+<input type="submit" value="Send" name="Print" onclick="print()">        
+</form> 
+</body> 
+</html>

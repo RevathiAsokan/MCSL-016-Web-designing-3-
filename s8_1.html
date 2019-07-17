@@ -1,0 +1,35 @@
+<html>
+<head><title>Session 8.1</title>
+<script language="JavaScript">
+function validate()                                    
+{    
+    if (form1.fname.value == "")                                  
+    { 
+        window.alert("Please enter your first name."); 
+        form1.fname.focus(); 
+	} 
+    else if (form1.lname.value == "")                                  
+    { 
+        window.alert("Please enter your last name."); 
+        form1.lname.focus(); 
+    } 
+	else if (form1.dob.value == "")                                  
+    { 
+        window.alert("Please enter your date of birth."); 
+        form1.dob.focus(); 
+    } 
+	else
+	alert("Thank you");
+}
+</script> 
+</head>  
+<body> 
+<p><h3>Form</h3></p>          
+<form name="form1" action="" method="post">        
+<p>First Name: <input type="text" size="40" name="fname"> </p><br> 
+<p>Last Name: <input type="text" size="40" name="lname"> </p><br> 
+<p>Date of Birth: <input type="text" size="15" name="dob"> </p><br> 
+<p><input type="submit" value="Send" name="Submit" onclick="validate()"></p>          
+</form> 
+</body> 
+</html>

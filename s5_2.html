@@ -1,0 +1,38 @@
+<html>
+<head><title>Session 5.1</title>
+<script language="JavaScript">
+function setdate()
+{
+	var dt=new Date();
+	dt.getDate();
+	form1.gt.value=form1.d.value + "/" + dt.getMonth() + "/" +dt.getFullYear();
+	dt=new Date(dt.getFullYear(), dt.getMonth(),form1.d.value);
+	switch (dt.getDay())
+	{
+	case 0: alert("Sunday");
+			break;
+	case 1: alert("Monday");
+			break;
+	case 2: alert("Tuesday");
+			break;
+	case 3: alert("Wednesday");
+			break;
+	case 4: alert("Thursday");
+			break;
+	case 5: alert("Friday");
+			break;
+	case 6: alert("Saturday");
+			break;
+	default:	alert("Invalid input");
+	}
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post" action="">
+<p>Enter Day (1-31) <input name="d" type="text" size="2"><br><br>
+<input type="button" name="Button" value="SetDate" onClick="setdate()"></p>
+<p>Date <input name="gt" type="text"></p>
+</form>
+</body>
+</html>

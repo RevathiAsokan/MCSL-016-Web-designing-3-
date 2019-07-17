@@ -1,0 +1,27 @@
+<html>
+<head><title>Session 15.1</title>
+<script language="JavaScript">
+function validate()                                    
+{ 
+    if ((form1.name.value == "") ||(form1.add.value == "") || (form1.m1.value == "") || (form1.m2.value == "") || (form1.uname.value==""))
+        alert("Please fill all fields");
+	else if ((form1.pw.value == "") || (form1.pw.value.length <= 8))
+		alert("Password should be more than 8 characters");
+	else
+		alert("Thank you");
+}
+</script> 
+</head>  
+<body> 
+<p><h3>Student Details</h3></p>          
+<form name="form1" action="" method="post">        
+Student Name: <input type="text" size="25" name="name"><br><br>
+Address: <input type="text" size="25" name="add"><br><br>
+Marks in 10+2: <input type="text" size="4" name="m1">
+ Marks in Graduation: <input type="text" size="4" name="m2"><br><br> 
+User Name: <input type="text" size="10" name="uname"><br><br> 
+Password: <input type="password" size="15" name="pw"><br><br>
+<input type="submit" value="Submit" name="Submit" onclick="validate()">            
+</form> 
+</body> 
+</html> 

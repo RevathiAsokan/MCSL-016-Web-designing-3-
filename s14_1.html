@@ -1,0 +1,22 @@
+<html>
+<head><title>Session 14.1 </title>
+<script language="JavaScript">
+function transfer()
+{
+	form2.gt.value=form1.d.value;
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post" action="">
+<strong>Customer Copy</strong>
+<p>Enter date: <input name="d" type="text" size="11"><br><br>
+<input type="button" name="Button" value="submit" onClick="transfer()"></p>
+</form>
+<form name="form2" method="post" action="">
+<br>
+<strong>Office Copy</strong>
+<p>Entered Date is: <input name="gt" type="text" readonly="true">  </p>
+</form>
+</body>
+</html>

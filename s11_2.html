@@ -1,0 +1,19 @@
+<html>
+<head><title>Session 11.2</title>
+<script language="JavaScript">
+function validate()                                    
+{ 
+	if ((form1.email.value == "") || (form1.email.value.indexOf("@", 0) < 0) || (form1.email.value.indexOf(".", 0) < 0)) 
+		alert("Please enter a valid e-mail address.");
+	else
+		alert("Thank you");
+}
+</script> 
+</head>  
+<body>         
+<form name="form1" action="" method="post">         	
+Enter your E-mail ID: <input type="text" size="30" name="email"><br><br> 
+<input type="submit" value="Send" name="Submit" onclick="validate()">                
+</form> 
+</body> 
+</html> 

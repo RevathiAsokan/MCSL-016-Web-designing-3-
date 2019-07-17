@@ -1,0 +1,24 @@
+<html>
+<head><title>Session 2.2 </title>
+<script language="JavaScript">
+function messages()
+{
+input_box=confirm("Do You Want a Greeting");
+if(input_box==true)
+{
+window.open("welcome.gif");
+window.document.write("Welcome to Netscape navigator!" );
+}
+else
+{
+alert("You Have Selected No");
+}
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post" action="">
+<input type="submit" name="Submit" value="Submit" onClick="messages()">
+</form>
+</body>
+</html>
